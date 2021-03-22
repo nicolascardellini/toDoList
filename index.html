@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tareas</title>
-    <link rel="stylesheet" href="diseñolista.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/88a9d8d8ee.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="contenedor">
-        <h1>Lista de tareas</h1>
-        <div id="header">
+        <div class="header">
+            <h1 >Lista de tareas</h1>        
+            <span class= "fas fa-expand" id="startFull" onClick="fullScreen()" ></span>
+        </div>    
+            
+       
+        
+          
+        <div id="add" >
             
             <form id="form">
                 <input type="text" placeholder="introduce una tarea" id="input" class="input">
