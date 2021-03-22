@@ -5,32 +5,32 @@ body {
   background-color: black;
 }
 
-.input::-webkit-input-placeholder {
-  font-size: 32px;
-  color: white;
+form {
+  width: 90%;
 }
 
-.input:-ms-input-placeholder {
-  font-size: 32px;
-  color: white;
-}
-
-.input::-ms-input-placeholder {
-  font-size: 32px;
-  color: white;
-}
-
-.input::placeholder {
-  font-size: 32px;
-  color: white;
-}
-
-.input {
+form input {
   height: 48px;
   background-color: grey;
-  width: 950px;
   color: white;
   font-size: 32px;
+  width: 90%;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+}
+
+input:-ms-input-placeholder {
+  color: white;
+}
+
+input::-ms-input-placeholder {
+  color: white;
+}
+
+input::placeholder {
+  color: white;
 }
 
 table tr td {
@@ -50,14 +50,15 @@ table tr td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-collapse: collapse;
   width: 100%;
   margin-bottom: 20px;
   font-size: 32px;
   height: 52.8px;
-  margin-left: 15px;
 }
 
 #header > button {
+  width: 20%;
   cursor: pointer;
   border: 0;
   color: white;
@@ -81,7 +82,7 @@ tr {
   display: -ms-flexbox;
   display: flex;
   background-color: grey;
-  margin: 16px;
+  margin-top: 16px;
 }
 
 td {
@@ -129,6 +130,10 @@ span:hover {
   cursor: pointer;
 }
 
+.verde {
+  background: blue;
+}
+
 @-webkit-keyframes slide-up {
   0% {
     opacity: 0;
@@ -154,4 +159,12 @@ span:hover {
             transform: translateY(0);
   }
 }
-/*# sourceMappingURL=styles.css.map */
+
+@media screen and (max-width: 800px) {
+  .contenedor {
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+  }
+}
