@@ -46,7 +46,29 @@ table tr td {
   font-family: helvetica;
 }
 
-#header {
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.header h1 {
+  width: 90%;
+}
+
+.header span {
+  width: 10%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  text-align: center;
+  border: collapse;
+  width: 32px;
+  height: 32px;
+}
+
+#add {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,7 +79,7 @@ table tr td {
   height: 52.8px;
 }
 
-#header > button {
+#add > button {
   width: 20%;
   cursor: pointer;
   border: 0;
